@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git credentialsId: 'github-token', url: 'https://github.com/anjali702/devops-site.git'
+                git credentialsId: 'github-token', url: 'https://github.com/anjali720/devops-site.git'
             }
         }
         stage('Check File') {

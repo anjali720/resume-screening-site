@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Clone Repo') {
             steps {
-                git 'https://github.com/anjali702/devops-site.git'
+                git credentialsId: 'github-token', url: 'https://github.com/anjali702/devops-site.git'
             }
         }
 
@@ -17,7 +17,6 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'In real case, deploy HTML to server or S3 bucket'
-               
             }
         }
     }

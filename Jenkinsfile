@@ -2,19 +2,23 @@ pipeline {
     agent any
 
     stages {
-        stage('Check File') {
+        stage('Clone Repo') {
             steps {
-                // Use 'bat' for Windows
-                bat 'dir'
+                bat 'echo Cloning...'
+                // Normally Git is handled by Jenkins when using Git SCM
+            }
+        }
+
+        stage('Build') {
+            steps {
+                bat 'echo Building project...'
             }
         }
 
         stage('Deploy') {
             steps {
-                bat 'echo Deploy step'
+                bat 'echo Deploying...'
             }
         }
     }
-}
-
 }

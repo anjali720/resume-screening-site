@@ -17,7 +17,7 @@ pipeline {
         stage('Deploy') {
             steps {
                 echo 'In real case, deploy HTML to server or S3 bucket'
-                // You can integrate with Docker, AWS CLI, etc.
+               
             }
         }
     }

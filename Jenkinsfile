@@ -1,11 +1,11 @@
 pipeline {
     agent any
     stages {
-        stage('Clone Repo') {
-            steps {
-                git credentialsId: 'github-token', url: 'https://github.com/anjali720/devops-site.git'
-            }
-        }
+       // stage('Clone Repo') {
+           // steps {
+                //git credentialsId: 'github-token', url: 'https://github.com/anjali720/devops-site.git'
+      //      }
+    // }
         stage('Check File') {
             steps {
                 sh 'ls | grep devops.html'

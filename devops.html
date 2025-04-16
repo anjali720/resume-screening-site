@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Automated Resume Screening</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet" />
+  <style>
+    * {
+      scroll-behavior: smooth;
+      box-sizing: border-box;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f2f5;
+      color: #333;
+    }
+    header {
+      background: #0066cc;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 5px solid #004c99;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 3rem;
+    }
+    header p {
+      font-size: 1.2rem;
+      margin-top: 10px;
+    }
+    nav {
+      background: #004c99;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      padding: 10px 0;
+    }
+    nav a {
+      color: white;
+      margin: 10px 20px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    .hero {
+      text-align: center;
+      padding: 60px 20px;
+      background: linear-gradient(135deg, #e0f0ff, #ffffff);
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .hero button {
+      background: #0066cc;
+      color: white;
+      border: none;
+      padding: 12px 24px;
+      font-size: 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      transition: background 0.3s ease;
+    }
+    .hero button:hover {
+      background: #0055aa;
+    }
+    section {
+      max-width: 1000px;
+      margin: 40px auto;
+      background: white;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      animation: fadeIn 1s ease-in;
+    }
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    h2 {
+      color: #0066cc;
+      margin-bottom: 15px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    .contact {
+      background: #e8f4ff;
+      text-align: center;
+      padding: 40px 20px;
+      border-radius: 10px;
+      margin: 40px auto;
+      max-width: 600px;
+    }
+    .contact input, .contact textarea {
+      width: 100%;
+      padding: 10px;
+      margin: 10px 0;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-family: inherit;
+    }
+    .contact button {
+      background: #0066cc;
+      color: white;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 6px;
+      cursor: pointer;
+    }
+    footer {
+      text-align: center;
+      padding: 20px;
+      background: #004c99;
+      color: white;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Automated Resume Screening System</h1>
+    <p>Using AI and DevOps for smarter hiring decisions</p>
+  </header>
+
+  <nav>
+    <a href="#problem">Problem</a>
+    <a href="#solution">Solution</a>
+    <a href="#tech">Technologies</a>
+    <a href="#outcomes">Outcomes</a>
+    <a href="#conclusion">Conclusion</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="hero">
+    <h2>Revolutionize Your Hiring Process</h2>
+    <p>Automate resume screening with AI-powered technology</p>
+    <button onclick="document.getElementById('solution').scrollIntoView({ behavior: 'smooth' })">Learn How</button>
+  </div>
+
+  <section id="problem">
+    <h2>Problem Statement</h2>
+    <ul>
+      <li>Manual resume screening is time-consuming and inefficient.</li>
+      <li>Subjective decision-making affects fairness and diversity.</li>
+      <li>Processing diverse resume formats is challenging.</li>
+      <li>Lack of automation causes delays in hiring.</li>
+    </ul>
+  </section>
+
+  <section id="solution">
+    <h2>Proposed Solution</h2>
+    <ul>
+      <li>Use NLP to extract key data from resumes (name, skills, education).</li>
+      <li>ML models to score and rank candidates based on job-fit.</li>
+      <li>Automated shortlisting with transparent scoring.</li>
+      <li>Deploy using CI/CD, Docker, Kubernetes, and cloud services.</li>
+    </ul>
+  </section>
+
+  <section id="tech">
+    <h2>Technologies Used</h2>
+    <ul>
+      <li><strong>Frontend:</strong> React.js</li>
+      <li><strong>Backend:</strong> Python</li>
+      <li><strong>Databases:</strong> MongoDB, PostgreSQL</li>
+      <li><strong>NLP/ML:</strong> spaCy, NLTK, OpenAI API, TensorFlow, Scikit-learn</li>
+      <li><strong>DevOps:</strong> Jenkins, GitHub Actions, Docker, Kubernetes</li>
+      <li><strong>Cloud:</strong> AWS, Google Cloud, Azure</li>
+    </ul>
+  </section>
+
+  <section id="outcomes">
+    <h2>Expected Outcomes</h2>
+    <ul>
+      <li>Less manual screening and quicker shortlisting.</li>
+      <li>Objective and unbiased candidate selection.</li>
+      <li>Scalable architecture with cloud deployment.</li>
+      <li>Efficient hiring powered by automation and AI.</li>
+    </ul>
+  </section>
+
+  <section id="conclusion">
+    <h2>Conclusion</h2>
+    <p>
+      The Automated Resume Screening System leverages modern technologies like AI, NLP, and DevOps to improve the recruitment process. It enables faster, fairer, and smarter hiring by automating resume analysis and candidate ranking.
+    </p>
+  </section>
+
+  <section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <p>Have questions or want a demo? Reach out below:</p>
+    <form onsubmit="alert('Message submitted!'); return false;">
+      <input type="text" placeholder="Your Name" required />
+      <input type="email" placeholder="Your Email" required />
+      <textarea rows="4" placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Automated Screening Project. All rights reserved.</p>
+  </footer>
+</body>
+</html>

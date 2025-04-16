@@ -1,22 +1,19 @@
 pipeline {
     agent any
-
     stages {
         stage('Clone Repo') {
             steps {
                 git credentialsId: 'github-token', url: 'https://github.com/anjali702/devops-site.git'
             }
         }
-
         stage('Check File') {
             steps {
-                sh 'ls -l devops.html'
+                sh 'ls | grep devops.html'
             }
         }
-
         stage('Deploy') {
             steps {
-                echo 'In real case, deploy HTML to server or S3 bucket'
+                echo 'Deploying your application...'
             }
         }
     }

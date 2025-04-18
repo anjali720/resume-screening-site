@@ -5,7 +5,7 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 bat 'echo Cloning...'
-                // Normally Git is handled by Jenkins when using Git SCM
+               
             }
         }
 

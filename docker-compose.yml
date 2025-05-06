@@ -10,6 +10,13 @@ services:
     networks:
       - app-network
 
+  node-test:
+    image: node:alpine
+    working_dir: /app
+    volumes:
+      - .:/app
+    command: npm test
+
 networks:
   app-network:
     driver: bridge
